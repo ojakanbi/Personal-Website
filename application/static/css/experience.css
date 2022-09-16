@@ -1,0 +1,163 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+
+
+
+html{
+    min-height: 100%;
+    overflow: scroll;
+  }
+  
+
+  /* Layout body */
+body{
+    height: calc(10vh - 8em);
+  
+    color: rgba(255, 255, 255, 0.959);
+    font-family: 'Anonymous Pro', monospace;  
+    background-color: rgb(25,25,25);  
+  }
+
+
+.topnav {
+   
+    float: right;
+    
+  
+    overflow: hidden;
+    background-color: rgb(25,25,25);
+    position: sticky;
+    top: 0;
+    width: 50%;
+    height: auto
+  }
+  
+  .topnav a {
+    float: right;
+    color: rgb(172, 174, 44);
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    min-height:16px;
+   
+    background-color: rgb(172, 174, 44);
+
+    color: black;
+  }
+  
+  .topnav a.active {
+    margin-top: 0px;
+    background-color: rgb(172, 174, 44);
+    color: white;
+  }
+
+
+  /*  name top left  */ 
+
+  #nametopleft{
+    padding: 10;
+    font-family:'Courier New', Courier, monospace;
+    font-size:150%;
+    color: rgb(172, 174, 44);
+   
+ }
+
+  /*  CENTER TEXT  */   /*  CENTER  */ 
+
+  .center {
+    margin: auto;
+    width: 50%;
+
+    border-width: 8px;
+    padding: 10px;
+  }
+
+
+  .center1 {
+    margin: auto;
+    width: 50%;
+    border-width: 1px;
+    padding: 20px;
+  }
+  
+
+/* lAYout name */
+.layoutname{
+    position: relative ;
+   
+    
+    border-right: 2px solid rgb(172, 174, 44);
+    font-size: 300%;
+    
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    
+    
+  }
+  
+  .typewritteranimation{
+    animation: typewriter 2s steps(40) 1s 1 normal both,
+    blinkTextCursor 900ms steps(40) infinite normal;
+  }
+          @keyframes typewriter{
+          from{width: 0;}
+          to{width: 16em;}
+  }
+          @keyframes blinkTextCursor{
+          from{border-right-color: rgb(25,25,25);}
+          to{border-right-color: transparent;}
+  }
+
+  .container{
+    display: flex;  /*Display behavior in columns and rows   */
+    justify-content: center;  /* items in container are pos in center */
+    align-items: center;   /* items in the container default alignment  */
+    flex-wrap: wrap;   /* Flex items breaks into multiple line  */
+    padding: 20px;    /* To create space  around an element content */
+    }
+
+  .container .box{
+    position: relative; /* pos relative to its normal pos  */
+    width: 320px;  /* of an element, how big the container/box element is*/
+    height: 400px;  /*of an element, how tall the cont and box element is */
+    display: flex;  /* display behavior in columns and roll once minimized*/
+    justify-content: center;  /* item in content are pos in the center */
+    margin: 40px 30px;  /* spaces around elements outside of defined borders */
+    transition: 0.5s;  /* change prop value smoothly, over a given time */
+      }
+
+  .container .box:before{
+    position: absolute;
+    content: " ";
+    top:0%;
+    left: 5px;
+    width: 50%;
+    height: 100%;
+    background: white;
+    transform: skew(15deg);  /* skews the item on the x axis   */
+    transition: 0.5s;
+  }
+
+  .container .box:after{
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 50%;
+  height: 100%;
+  background: white;
+  border-radius: 8px;
+  transform: skew(15deg);
+  filter: blur(5px);
+  transition: 0.5s;
+
+}
+
+.content {
+  z-index: 2; /*  The z-index CSS property sets the z-order of a positioned element and its descendants or flex items.*/
+}

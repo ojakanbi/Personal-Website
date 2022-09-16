@@ -1,0 +1,193 @@
+/* css for layout page and more */
+
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+
+html{
+  min-height: 100%;
+  overflow: scroll;
+}
+
+/* Layout body */
+body{
+  height: calc(10vh - 8em);
+
+  color: rgba(255, 255, 255, 0.959);
+  font-family: 'Anonymous Pro', monospace;  
+  background-color: rgb(25,25,25);  
+}
+/* lAYout name */
+.layoutname{
+  position: relative ;
+ 
+  
+  border-right: 2px solid rgb(172, 174, 44);
+  font-size: 300%;
+  
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  
+  
+}
+
+.typewritteranimation{
+  animation: typewriter 2s steps(40) 1s 1 normal both,
+  blinkTextCursor 900ms steps(40) infinite normal;
+}
+        @keyframes typewriter{
+        from{width: 0;}
+        to{width: 16em;}
+}
+        @keyframes blinkTextCursor{
+        from{border-right-color: rgb(25,25,25);}
+        to{border-right-color: transparent;}
+}
+       
+
+
+/*  profile pic  */
+.profilepic{
+  width: 190px;
+  height: auto;
+  border-radius: 40%;
+  border-style: solid;
+  border-width: 50%;
+  align-content: center;
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: rgba(255,255,255,.75);
+  
+
+}
+/*  About me button  */
+
+.aboutme{
+  transition-duration: 0.4s;
+  font-family:'Anonymous Pro', monospace;
+  background-color: rgb(172, 174, 44);
+  border-radius: 0%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position:relative;
+  top: 10px;
+  cursor: pointer;
+
+}
+
+  .aboutme:hover{
+    background-color: grey;
+    color: rgb(33, 40, 58);
+  }
+
+
+  /*  CENTER TEXT  */   /*  CENTER  */ 
+
+  .center {
+    margin: auto;
+    width: 50%;
+
+    border-width: 8px;
+    padding: 10px;
+  }
+
+
+  .center1 {
+    margin: auto;
+    width: 50%;
+    border-width: 1px;
+    padding: 20px;
+  }
+  
+
+
+  .bodynav {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+
+  .topnav {
+    float: right;
+  
+    overflow: hidden;
+    background-color: rgb(25,25,25);
+    position: sticky;
+    top: 0;
+    width: 50%;
+    height: auto
+  }
+  
+  .topnav a {
+    float: right;
+    color: rgb(172, 174, 44);
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    min-height:16px;
+   
+    background-color: rgb(172, 174, 44);
+
+    color: black;
+  }
+  
+  .topnav a.active {
+    margin-top: 0px;
+    background-color: rgb(172, 174, 44);
+    color: white;
+  }
+
+  
+
+  /*  name top left  */ 
+
+  .nametopleft{
+    padding: 10;
+    font-family:'Courier New', Courier, monospace;
+    font-size:150%;
+    color: rgb(172, 174, 44);
+   
+    
+  }
+
+
+  /*  Center anchor tag of social media */ 
+.socialbutton{
+  text-align: center;
+  margin-top: -3%;
+  position: sticky;
+  -ms-transform: translateY(-100%);
+  transform: translateY(-60%);
+}
+
+
+.ig {
+    
+  padding: 4px;
+  float: middle;
+  font-size: 30px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 100%;
+  opacity: 0.5;
+  background-color:  rgb(172, 174, 44);
+  cursor: pointer;
+  
+}
+/* Add a hover effect if you want */
+.ig:hover {
+  opacity: 0.9;
+}
+
+
+

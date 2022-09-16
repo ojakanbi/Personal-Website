@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet"  href="static/css/layout.css"
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script>
+            var i = 0;
+            var txt = "Hey, It's OJ, a Sophomore Information Science and Technology Student Athelete at the Pennslyvania State University, Abington Campus. My Interest in Web development is part of the reason I decided to code up my own website. With my Knowledge in Html/css, Python and sql, I hope to expand my tech skills at its Highest level. Outside of this, as far as my interest goes, I'm also a Content Creator/ Photographer who runs my school men's soccer Instagram page and my own personal content creating Instagram page. Check it out. ";
+            var speed = 50;
+             
+            function typeWriter() {
+              if (i < txt.length) {
+                document.getElementById("demo").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+              }
+            }
+        </script>
+            
+        <title>OJ Akanbi - Home</title>
+
+        
+
+    </head>
+    
+      
+
+    
+    
+    
+    
+  <body>
+    
+    <nav>
+      <div class="topnav">
+        <a href="{{ url_for('resume') }}" class="nav-link active ">Resume</a>
+        <a href="{{ url_for('Home') }}" class="nav-link {% if register %} active {% endif %}">Home</a>
+       
+    </nav> 
+   
+
+
+   
+    
+
+    <h2 class=" nametopleft">
+      OJ Akanbi
+    </h2>
+
+   
+
+    <div class=" center1">
+      <h4 class=" layoutname typewritteranimation">Oyindamola Joshua    Akanbi </h4>
+    </div>
+
+      <div class="socialbutton">
+        <a href="https://instagram.com/oj.akanbi/">
+          <img src="static/images/instagram.jpg"
+          class="ig ig-instagram">
+        </a>
+        <a href="https://www.linkedin.com/in/ojakanbi/">
+          <img src="static/images/linkedin.png"
+          class="ig ig-instagram">
+        </a>
+
+       
+      </div>
+     
+  
+      <img class="profilepic" src="static/images/profile.png"> 
+      <button onclick="typeWriter()" class= "aboutme">About Me</button>
+      </div>
+
+      
+        
+       <div>
+        <h3 id="demo" class="center1"></h3>
+        
+     
+       </div>
+  </body>
+     
+
+         
+  
+</html>
+

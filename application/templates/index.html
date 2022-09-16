@@ -1,0 +1,19 @@
+{% extends "layout1.html" %}
+
+{% block content %}
+    
+    <div class="row">
+        <div class="col-md-10 text-center">
+            <h1 class="display-6 ">OJ AKANBI</h1>
+
+            {% if login %}
+            <h3>info goes here.</h3>
+            {% else %}
+            <p>Bio? <a href= "{{url_for('login') }}">Login</a></p>
+            {% endif %}
+
+        </div>
+    </div>
+{% endblock %}
+
+

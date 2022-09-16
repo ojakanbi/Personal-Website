@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet"  href="static/css/layout.css">
+</head>
+
+  {% block content %}
+  <nav>
+    <div class="topnav">
+      <a href="{{ url_for('resume') }}" class="nav-link {% if courses %} active {% endif %}">Resume</a>
+      <a href="{{ url_for('Experience') }}" class="nav-link {% if register %} active {% endif %}">Experience</a>
+      <a href="{{ url_for('Home') }}" class="nav-link {% if register %} active {% endif %}">Home</a>
+     
+  </nav> 
+  {% endblock  %}
+
+
+
+
+
+
+
+
+        
+        
+  
+    
